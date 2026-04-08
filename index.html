@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grupo">
+        <header class="cabecalho">
+            <h1>Site Semântico</h1>
+            <nav class="menu">
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+        <div class="conteudo">
+            <nav class="navegacao">
+                <h2>Menu Lateral</h2>
+                <ul>
+                    <li>Perfil</li>
+                    <li>Configurações</li>
+                    <li>Ajuda</li>
+                </ul>
+            </nav>
+            <section class="sessao">
+                <h3>Painel Principal</h3>
+                <p>Nome: <span id="nomeUsuario">Maria Vitória</span></p>
+                <p>Curso: <span id="nomeCurso">Desenvolvendo Web Front-End</span></p>
+                <p>Status: <span id="Status">Ativo</span></p>
+                <hr>
+                <h3>Alterar Nome</h3>
+                <div class="formulario">
+                    <input type="text" name="inputNome" id="inputNome">
+                    <button onclick="alterarNome()">Alterar</button>
+                </div>
+                <h3>Alterar Curso</h3>
+                <div class="formulario">
+                    <input type="text" name="inputCurso" id="inputCurso">
+                    <button onclick="alterarCurso()">Alterar</button>
+                </div>
+                <h3>Alterar Status</h3>
+                <div class="formulario">
+                    <input type="text" name="inputStatus" id="inputStatus">
+                    <button onclick="alterarStatus()">Alterar</button>
+                </div>
+            </section>
+        </div>
+        <footer class="rodape">
+            <p>&copy; Desenvolvido por <strong>Maria Vitória</strong></p>
+            <div class="redes">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">Instagram</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="Github">Github</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
